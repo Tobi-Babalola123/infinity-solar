@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Menu, X, Sun } from "lucide-react";
+import Image from "next/image";
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,11 +23,16 @@ export function Navigation() {
         <div className="flex justify-between items-center h-16 sm:h-20">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-yellow-500 rounded-lg flex items-center justify-center">
-              <Sun className="w-6 h-6 text-white" />
-            </div>
+            <Image
+              src="/infinity.png"
+              alt="Infinity Solar Logo"
+              width={50}
+              height={50}
+              className="rounded-lg object-contain"
+            />
+
             <span className="hidden sm:inline text-xl font-bold text-primary">
-              Infinity Solar
+              Infinity Solar Energy
             </span>
           </div>
 
