@@ -1,7 +1,7 @@
-'use client'
+"use client";
 
-import { ArrowRight, Zap } from 'lucide-react'
-import Image from 'next/image'
+import { ArrowRight, Zap } from "lucide-react";
+import Image from "next/image";
 
 export function Hero() {
   return (
@@ -18,15 +18,20 @@ export function Hero() {
           <div className="fade-in-up">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
               <Zap className="w-4 h-4 text-accent" />
-              <span className="text-sm font-semibold text-white">Clean Energy for Lagos</span>
+              <span className="text-sm font-semibold text-white">
+                Clean Energy for Lagos
+              </span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              Power Your Home with <span className="text-accent">Solar Energy</span>
+              Power Your Home with{" "}
+              <span className="text-accent">Solar Energy</span>
             </h1>
 
             <p className="text-lg text-gray-200 mb-8 max-w-lg leading-relaxed">
-              Join thousands of Lagos residents saving on electricity bills with Infinity Solar&apos;s premium solar panel installations and battery storage solutions.
+              Join thousands of Lagos residents saving on electricity bills with
+              Infinity Solar&apos;s premium solar panel installations and
+              battery storage solutions.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -50,14 +55,14 @@ export function Hero() {
                 <p className="text-gray-300 text-sm">Customer Satisfaction</p>
               </div>
               <div>
-                <p className="text-accent font-bold text-2xl">10 YR</p>
+                <p className="text-accent font-bold text-2xl">10 YRS</p>
                 <p className="text-gray-300 text-sm">Warranty Coverage</p>
               </div>
             </div>
           </div>
 
           {/* Right Visual */}
-          <div className="fade-in-up" style={{ animationDelay: '0.2s' }}>
+          <div className="fade-in-up" style={{ animationDelay: "0.2s" }}>
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-accent/20 rounded-2xl blur-2xl"></div>
               <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
@@ -75,5 +80,5 @@ export function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
